@@ -1,0 +1,25 @@
+name: vTraps
+version: '1.0-SNAPSHOT'
+main: im.hinexx.itemsPlugin.ItemsPlugin
+api-version: '1.21.4'
+depend: [WorldEdit]
+softdepend: [ItemsAdder, WorldGuard, ProtectionStones]
+load: POSTWORLD
+
+commands:
+  vtraps:
+    description: vTraps give and reload
+    usage: /vt give <player> <item> [amount] | /vt reload
+    aliases: [vt]
+    permission: vtraps.give
+
+permissions:
+  vtraps.give:
+    description: Allows giving vTraps custom items
+    default: op
+  vtraps.reload:
+    description: Allows reloading vTraps configs
+    default: op
+  vtraps.protection.bypass:
+    description: Bypass WorldGuard/ProtectionStones checks for traps
+    default: op

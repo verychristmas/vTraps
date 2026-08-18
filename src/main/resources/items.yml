@@ -1,0 +1,30 @@
+explode_trap:
+  item: tnt
+  display_name: "&cВзрывная трапка"
+  lore:
+    - "&7ПКМ — притянуть ближайшего игрока"
+    - "&7Взрывает пол и засасывает обоих"
+
+upgr_trap:
+  item: redstone
+  display_name: "&4Адская трапка"
+  lore:
+    - "&7ПКМ — притянуть ближайшего игрока"
+    - "&7Яма 7x7, chorus только владельцу"
+  effects:
+    - Darkness 1 5
+  chorus-owner: true
+
+default:
+  item: white_stained_glass
+  display_name: "&fТрапка"
+  lore:
+    - "&7ПКМ — закрыть себя в клетку"
+    - "&7Быстро собирается из стекла"
+
+dizorent:
+  item: snowball
+  display_name: "&bДизориент"
+  lore:
+    - "&7ПКМ — волна END_ROD вокруг тебя"
+    - "&7Частицы разлетаются на 9 блоков"

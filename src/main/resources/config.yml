@@ -1,0 +1,46 @@
+##########################
+### File configuration ###
+##########################
+
+performance:
+  max-concurrent-dizorent: 15
+  max-concurrent-traps: 20
+  pull-tick-step: 2
+protection:
+  protect-ps-blocks: true
+  use-trap-in-region: false
+cooldowns:
+  enable: true
+  type: after_missing # after_missing, after_using
+  explode_trap: 3s
+  upgr_trap: 5s
+  default: 5s
+  dizorent: 15
+build-default-trap:
+  build-seconds: 0.65
+dizorent:
+  enable: true
+  effect: true
+  effects:
+    - "darkness 3 6" # strength > duration
+    - "poison 3 6"
+traps:
+  allow_use_in_ps: false
+  allow_use_in_trap: false
+  explode_trap:
+    use-radius: 6
+    trap-duration: 15s
+  upgr_trap:
+    use-radius: 9
+    trap-duration: 20s
+  default:
+    trap-duration: 12s # no use-radius — this trap does not pull
+structures:
+  explode-trap:
+    structure: explode_trap.schem
+  upgr-trap:
+    structure: explode_trap.schem
+  default-trap:
+    structure: default.schem
+  dizorent:
+    structure: none

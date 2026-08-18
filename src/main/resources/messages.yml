@@ -1,0 +1,50 @@
+prefix: "&7[&bvTraps&7] "
+
+command:
+  no-permission: "<prefix>&cУ вас нет прав!"
+  usage: "<prefix>&cИспользование: /vt give <игрок> <предмет> [количество]"
+  usage-reload: "<prefix>&7/vt reload — перезагрузить все конфиги"
+  available-items: "<prefix>&7Доступные предметы: &e<items>"
+  player-not-found: "<prefix>&cИгрок не найден!"
+  invalid-amount: "<prefix>&cНеверное количество!"
+  amount-range: "<prefix>&cКоличество должно быть от 1 до 64!"
+  unknown-item: "<prefix>&cНеизвестный предмет: &e<item>"
+  given-sender: "<prefix>&aВыдано &e<item> &ax<amount> игроку &e<player>"
+  given-target: "<prefix>&aВы получили <item_name> &ex<amount>"
+  reload-success: "<prefix>&aconfig, messages, items и structures перезагружены"
+
+common:
+  cooldown: "<prefix>&cКулдаун: &e<seconds> &cсек"
+  busy: "<prefix>&cСлишком много активных эффектов, подожди секунду"
+  in-trap: "<prefix>&cНельзя использовать трапку, пока ты в другой трапке"
+
+protection:
+  denied: "<prefix>&cЗдесь нельзя использовать трапку (регион / ProtectionStones)"
+  ps-block: "<prefix>&cНельзя ломать блок ProtectionStones"
+
+explodetrap:
+  already-active: "<prefix>&cЛовушка уже активируется!"
+  no-target: "<prefix>&cНет игроков рядом!"
+  activated: "<prefix>&cВзрывная ловушка активирована!"
+  pulled: "<prefix>&cВас притягивает ловушка!"
+  failed: "<prefix>&cЛовушка не сработала — предмет возвращён"
+  expired: "<prefix>&7Взрывная ловушка исчезла"
+
+upgrtrap:
+  already-active: "<prefix>&cАдская ловушка уже активируется!"
+  no-target: "<prefix>&cНет игроков рядом!"
+  activated: "<prefix>&4Адская ловушка активирована!"
+  pulled: "<prefix>&4Вас притягивает адская ловушка!"
+  failed: "<prefix>&cЛовушка не сработала — предмет возвращён"
+  expired: "<prefix>&7Адская ловушка исчезла"
+  chorus-blocked: "<prefix>&cChorus в этой ловушке недоступен!"
+
+defaulttrap:
+  no-target: "<prefix>&cНет игроков рядом!"
+  activated: "<prefix>&fЛовушка активирована!"
+  caught: "<prefix>&fВас закрыла ловушка!"
+  missing-schem: "<prefix>&cСхема default.schem не найдена"
+  expired: "<prefix>&7Ловушка исчезла"
+
+dizorent:
+  activated: "<prefix>&bДизориент активирован!"
